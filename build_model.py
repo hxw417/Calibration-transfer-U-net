@@ -75,6 +75,6 @@ def creat_1D_unet5():
     # conv11 = Conv1D(1, 1, padding='same')(conv10)
     conv11 = Activation('sigmoid')(conv10)
 
-    model = Model(inputs=inputs, outputs=conv10)
+    model = Model(inputs=inputs, outputs=conv11)
     print(model.summary())
     return model
